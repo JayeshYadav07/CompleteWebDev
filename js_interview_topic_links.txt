@@ -1,0 +1,13 @@
+https://www.freecodecamp.org/news/when-and-why-you-should-use-es6-arrow-functions-and-when-you-shouldnt-3d851d7f0b26/
+
+https://www.freecodecamp.org/news/what-is-variable-hoisting-differentiating-between-var-let-and-const-in-es6-f1a70bb43d
+
+https://www.freecodecamp.org/news/execution-context-how-javascript-works-behind-the-scenes/
+
+https://www.freecodecamp.org/news/javascript-async-await-tutorial-learn-callbacks-promises-async-await-by-making-icecream/
+
+https://www.freecodecamp.org/news/javascript-promises-explained/
+
+https://www.section.io/engineering-education/how-to-use-javascript-arrow-functions-and-this-keyword/
+
+https://www.javatpoint.com/html-interview-questions

@@ -1,0 +1,62 @@
+what is react?
+=> it is a frontent Js library.
+
+what is component in react?
+=> it is a managable and meaningful peice of code.
+ex:=> amazon.in (header, subheader and content)
+
+how dow we write code in React?
+=> react uses JSx(javascript xml=>extensible markup language)
+=> react uses Babel as an interpreter in order to understand JSX.
+
+how to we manage codes in react?
+=> we manage our code in react through components.
+=> react has two types of component=> class component and functional component.
+
+which component type do we prefer in react?
+=> we prefer functional component over class component because class component are outdated and will be deprecated by React.org(metaverse)
+=> we can match every functionality of class component by using react Hooks of functional component.
+
+how do we make functional component?
+
+function fun(){                 functional component                      function Fun(){
+                                                                                return(
+                                                                                    JSX
+                                                                                    it is mandatory to close every html ele in react
+
+                                                                                    react fragment
+                                                                                    <>
+                                                                                    <div>{"hello world"}</div>
+                                                                                    <h1>
+                                                                                    </h1>
+                                                                                    </>
+                                                                                
+                                                                                )
+
+                                                                            }
+    return                      =========>                               
+}
+
+rules while making functional component?
+1=> naming convention  of functional component should be as follows
+        => name of component should followed by a capital letter ex:=== function Fun(){} 
+        => filename should be same as your component name. ex=> Fun.js
+
+2=> while writing html in react component you have to make sure they are inclosed in a parent tag or you can use react fragment (<></>).
+3=> only single component should be made in single file.
+
+how do we import and export in react?
+export => export default component_name;
+import => import component_name from "component_path"
+example;= import Header from "./component/Header";
+
+how do we do basic styling?
+1=> className
+2=> the css file will be imported in app.js because other than app.js every other component which we will make will be rendered in app.js.
+
+
+why we do not use class instead of className in JSX of react?
+=> JSX is extension of Javascript and class is a reserved keyword in JS ,so to avoid clashing or error 
+of naming during complilation of JSX we use className.
+
+
