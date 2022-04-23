@@ -1,0 +1,15 @@
+.subheader-list{
+    list-style: none;
+    display: flex;
+    margin:0;
+    padding: 0 5px;
+    height: 50px;
+    background-color: rgb(35, 46, 63);
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.list-item {
+    margin: 0 5px;
+}
