@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .Movies {
+            height: 20vh;
+            width: 20vw;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        h3,
+        .Price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h3 {
+            height: 25%;
+            background-color: rgba(72, 255, 0, 0.753);
+        }
+
+        .Price {
+            height: 75%;
+            background-color: rgba(255, 0, 0, 0.774);
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <select>
+        <option value="None">None</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Action">Action</option>
+        <option value="Romantic">Romantic</option>
+    </select>
+    <div class="container">
+
+        <div class="Movies">
+            <h3 class="Heading">Movie-1</h3>
+            <p class="Price" data-category="Romantic">Rommance</p>
+        </div>
+        <div class="Movies">
+            <h3 class="Heading">Movie-2</h3>
+            <p class="Price" data-category="Action">Action</p>
+        </div>
+        <div class="Movies">
+            <h3 class="Heading">Movie-3</h3>
+            <p class="Price" data-category="Comedy">Comedy</p>
+        </div>
+        <div class="Movies">
+            <h3 class="Heading">Movie-4</h3>
+            <p class="Price" data-category="Romantic">Rommance</p>
+        </div>
+        <div class="Movies">
+            <h3 class="Heading">Movie-5</h3>
+            <p class="Price" data-category="Action">Action</p>
+        </div>
+        <div class="Movies">
+            <h3 class="Heading">Movie-6</h3>
+            <p class="Price" data-category="Romantic">Rommance</p>
+        </div>
+        <div class="Movies">
+            <h3 class="Heading">Movie-7</h3>
+            <p class="Price" data-category="Comedy">Comedy</p>
+        </div>
+        <div class="Movies">
+            <h3 class="Heading">Movie-8</h3>
+            <p class="Price" data-category="Romantic">Rommance</p>
+        </div>
+        <div class="Movies">
+            <h3 class="Heading">Movie-9</h3>
+            <p class="Price" data-category="Comedy">Comedy</p>
+        </div>
+    </div>
+</body>
+<script>
+
+    //  show only those option is selected
+    let select = document.querySelector("select");
+    let allMovies = document.querySelectorAll(".Movies");
+    select.addEventListener("change", (e) => {
+        let value = select.value;
+        if(value == "None") {
+            allMovies.forEach((movie)=>{
+                movie.style.display = "block";
+            });
+        }
+        else{
+            allMovies.forEach((movie)=>{
+                let pElement = movie.querySelector("p");
+                let category = pElement.getAttribute("data-category")
+                if(category == value) {
+                    movie.style.display = "block";
+                }
+                else{
+                    movie.style.display = "none";
+                }
+            })
+        }
+    })
+</script>
+
+</html>

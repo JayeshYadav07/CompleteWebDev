@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font-Size</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        .container {
+            width: 500px; height:500px;
+            background-color: red;
+            font-size: 10px;
+        }
+        .inside{
+            /* font-size: 20px; */
+            background-color: cyan;
+            /* This is 16px related to html elements . By default html element is 16 px*/
+            width: 1rem;  
+            /* This is 10px related to its parent class container because , his font size is not define  , if it is defined then 1em = 20px*/
+            height: 1em;  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inside">
+        </div>
+    </div>
+</body>
+</html>

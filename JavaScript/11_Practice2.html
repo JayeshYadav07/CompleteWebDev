@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling</title>
+    <style>
+        .pink {
+            height: 50vh;
+            width: 50vw;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .blue {
+            height: 25vh;
+            width: 25vw;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pink">
+        <div class="blue"></div>
+    </div>
+</body>
+<script>
+    let pinkElement = document.querySelector('.pink');
+    let blueElement = document.querySelector('.blue');
+    pinkElement.addEventListener('click', (e) => {
+        alert('You clicked pink div')
+    })
+    blueElement.addEventListener('click', (e) => {
+        e.stopPropagation();
+
+        //this will stop the bubbling phase 
+    })
+</script>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: auto;
+        }
+
+        .pink {
+            height: 60vh;
+            width: 60vw;
+            background-color: pink;
+        }
+
+        .blue {
+            height: 50vh;
+            width: 50vw;
+            background-color: blue;
+        }
+
+        .yellow {
+            height: 40vh;
+            width: 40vw;
+            background-color: yellow;
+        }
+
+        .green {
+            height: 30vh;
+            width: 30vw;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pink">
+        <div class="blue">
+            <div class="yellow">
+                <div class="green"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // Remove the deepest div
+
+
+
+    //Solution NO:- iterative solution
+
+    let divElement = document.querySelector("div");   // select the first div element
+
+    while (divElement.childNodes.length > 0) {
+        divElement = divElement.children[0];
+    }
+    divElement.remove();
+
+
+    /*
+        //Solution NO:- recursive solution
+
+        let divElement = document.querySelector("div");   // select the first div element
+
+        function removeDeepestElement(divElement) {
+            if (divElement.children.length > 0) {
+
+                removeDeepestElement(divElement.children[0]);
+            }
+            else {
+                divElement.remove();
+            }
+        }
+        removeDeepestElement(divElement);
+
+    */
+
+</script>
+
+</html>

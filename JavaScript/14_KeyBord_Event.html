@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring keybord Events</title>
+    <style>
+        p {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="pass" id="pass">
+    <p id="pass2">Caps On!</p>
+</body>
+<script>
+    // Write a script which keeps checking the password being entered.It should check if Caps lock is on or off if its on it should not allow to type and show "Caps is on" on screen, also it should only allow to type if the shift in pressed down.
+
+    let inputElm = document.querySelector("input");
+    let pElm = document.querySelector("p");
+    let shift;
+
+    // This for caps lock is on or off . Also if the shift is false then it prevent the default behavior of input text.
+    inputElm.addEventListener("keydown", (e) => {
+        if (e.getModifierState('CapsLock')) {
+            pElm.style.display = "Block";
+            e.preventDefault();
+        } else {
+            pElm.style.display = "None";
+        }
+        if (!shift) e.preventDefault();
+    })
+
+
+    // This wil helps to check whether the shift is pressed down or not .if yes then it set the value of shift variables to true else it set the value false.
+
+    document.documentElement.addEventListener("keydown", (e) => {
+        let key = e.key;
+        if (key === "Shift") shift = true;
+    })
+
+    document.documentElement.addEventListener("keyup", (e) => {
+        let key = e.key;
+        if (key === "Shift") shift = false;
+    })
+
+</script>
+
+</html>

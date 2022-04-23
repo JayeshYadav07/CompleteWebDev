@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+<script>
+    // Without using meadia queries change the color accourding to dekstop , tablet , mobile size.
+
+    let divElement = document.querySelector('div');
+    window.addEventListener("resize", () => {
+        let width = window.innerWidth;
+        if (width <= 600) {
+            divElement.style.backgroundColor = "lightgreen";
+        }
+        else if (width <= 1024) {
+            divElement.style.backgroundColor = "aqua";
+        }
+        else {
+            divElement.style.backgroundColor = "pink";
+        }
+    })
+</script>
+
+</html>

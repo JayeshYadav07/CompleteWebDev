@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">JIRA</div>
+            <div class="btn" id="add"><span class="plus">+</span></div>
+        </div>
+        <main class="main-body">
+        </main>
+        <div class="dialog-box">
+            <div class="dialog">
+                <div class="dialog-header">
+                    <div class="dialog-heading">
+                        <input type="text" id="title">
+                    </div>
+                    <button class="cross" id="close">X</button>
+                </div>
+                <div class="dialog-body">
+                    <textarea id="todo__text"></textarea>
+                </div>
+                <div class="error">
+                    <h6>*title and text cannot be empty</h6>
+                </div>
+                <div class="submit">
+                    <button onclick="addTodo()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

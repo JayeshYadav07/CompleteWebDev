@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling, Capturing, Target</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            height: 100vh;
+            width: 100vw;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .orange {
+            height: 50vh;
+            width: 50vw;
+            background-color: rgb(255, 102, 0);
+        }.blue {
+            height: 25vh;
+            width: 25vw;
+            background-color: blue;
+        }.yellow {
+            height: 10vh;
+            width: 10vw;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        e.phase
+        e.target
+        e.currentTarget
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+     -->
+
+    <div class="container">
+        <div class="orange">
+            <div class="blue">
+                <div class="yellow"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let orange = document.querySelector('.orange');
+        let blue = document.querySelector('.blue');
+        let yellow = document.querySelector('.yellow');
+
+        orange.addEventListener('click', function(e){
+            
+            // console.log(e.target);
+            alert('orange')
+        },true);
+        blue.addEventListener('click', function(e){
+            
+            // console.log(e.target);
+            alert('blue')
+        });
+        yellow.addEventListener('click', function(e){
+            
+            // console.log(e.target);
+            alert('yellow')
+            e.stopPropagation();
+        });
+    </script>
+</body>
+</html>

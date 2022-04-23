@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.startBox {
+  height: 100%;
+  width: 100%;
+}
+.startBox .box {
+  height: 500px;
+  width: 300px;
+  background-image: url("boxBg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "left-header header header header right-header"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box main main main right-box"
+    "left-box input input input right-box";
+}
+.left-heading {
+  background-color: #8bdb81;
+  grid-area: left-header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #03045e;
+  border-bottom: 3px solid #03045e;
+}
+.main-heading {
+  color: #03045e;
+  border-bottom: 3px solid #03045e;
+  background-color: #80808082;
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-heading {
+  background-color: #ff6464;
+  grid-area: right-header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #03045e;
+  border-bottom: 3px solid #03045e;
+}
+.left-sidebar {
+  background-color: #8bdb81;
+  grid-area: left-box;
+  padding: 10px;
+}
+.correct-text-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.correct-item {
+  margin: 5px 0;
+  height: 50px;
+  background-color: #90e0ef;
+  border: 3px solid #00b4d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.main {
+  background-color: #caf0f8;
+  grid-area: main;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.type-word {
+  position: absolute;
+  padding: 5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  height: fit-content;
+  background-color: #90e0ef;
+  border: 3px solid #00b4d8;
+  border-radius: 2px;
+}
+.input-box {
+  background-color: gray;
+  grid-area: input;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+#input-word {
+  height: 50px;
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 0 10px;
+  font-weight: bold;
+}
+.right-sidebar {
+  background-color: #ff6464;
+  grid-area: right-box;
+  padding: 10px;
+}
+.wrong-text-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.wrong-item {
+  height: 50px;
+  background-color: #90e0ef;
+  border: 3px solid #00b4d8;
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.dialog-box {
+  height: 100%;
+  width: 100%;
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card-box-heading {
+  padding: 20px;
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(189, 189, 189);
+}
+.leftScore {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  background-color: rgb(108, 255, 71);
+}
+.rightScore {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: medium;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+}
+.result {
+  background-color: #00b4d8;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set and get Attributes</title>
+    <style>
+        div{
+            height:20vh;
+            width:20vh;
+            border: 2px solid black;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color:green;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" data-color="red"></div>
+    <div class="card" data-color="green"></div>
+    <div class="card" data-color="blue"></div>
+    <div class="card" data-color="yellow"></div>
+    <div class="card" data-color="red"></div>
+    <div class="card" data-color="green"></div>
+    <div class="card" data-color="red"></div>
+    <div class="card" data-color="blue"></div>
+</body>
+    <script>
+        let divCon = document.querySelectorAll("div");
+        for (let i = 0; i < divCon.length; i++)
+        {
+            divCon[i].addEventListener("click", function(e){
+                let choiceClass = divCon[i];
+                let classColor = choiceClass.getAttribute("data-color");
+                choiceClass.setAttribute("data-color","used");
+                choiceClass.classList.add(classColor)
+            });
+        }
+    </script>
+</html>

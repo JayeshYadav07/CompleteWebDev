@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+    <table border="1" id="myTable">
+        <tbody>
+            <tr>
+                <th>S.No.</th>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+        </tbody>
+    </table>
+    <form action="">
+        <input type="text" name="Name" id="Name" placeholder="Enter your name" required>
+        <input type="number" id="Marks" placeholder="Enter your Marks" min="0" required>
+        <button type="button">submit</button>
+    </form>
+</body>
+<script>
+    let btn = document.querySelector("button");
+    let table = document.getElementById("myTable");
+    let count = 1;
+
+    btn.addEventListener("click", (e) => {
+        myFunction();
+        count = count + 1;
+    })
+
+    function myFunction() {
+        let inpName = document.querySelector("#Name").value;
+        let inpMarks = document.querySelector("#Marks").value;
+        let createRow = document.createElement("tr");
+        createRow.innerHTML = `
+            <td>${count}</td>
+            <td>${inpName}</td>
+            <td>${inpMarks}</td>
+        `;
+
+        let tbody = document.querySelector("tbody");
+        tbody.appendChild(createRow);
+    }
+
+</script>
+
+</html>

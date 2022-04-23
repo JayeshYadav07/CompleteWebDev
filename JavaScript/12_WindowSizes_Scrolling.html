@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Sizes and Scrolling</title>
+</head>
+
+<body>
+    <div class="section1">
+        <h3>Section 1</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fuga quisquam autem hic! Rerum magni, maiores
+        voluptatum sunt reprehenderit perferendis rem, excepturi laborum quia distinctio necessitatibus odio. Placeat
+        natus exercitationem nam, impedit blanditiis qui explicabo voluptatibus sunt, temporibus repellendus corrupti,
+        molestiae illo ratione. Perspiciatis odit deserunt cumque minima beatae officia quidem, harum, voluptate quas
+        non totam libero assumenda eaque pariatur excepturi iusto impedit velit in explicabo necessitatibus numquam
+        commodi veniam, reprehenderit qui? Quos minima sint rem tempora obcaecati error, quae velit aperiam dolor
+        pariatur quisquam odio alias dolorem nulla. Vero, voluptas quod. Libero quibusdam voluptas odit ullam, corrupti
+        consectetur accusantium nihil ad ducimus veniam repellat deleniti optio quam iste a saepe temporibus, quas eos
+        corporis architecto accusamus ab nostrum! Commodi pariatur quisquam necessitatibus voluptatum non ducimus veniam
+        eligendi voluptatibus possimus ut. Ut deleniti dolore laboriosam eos explicabo vel. Laborum voluptatum dolorum
+        est officiis quia? Quos ullam, accusamus ea, adipisci vero perferendis eveniet corrupti vitae eaque provident
+        minima. Assumenda, sed! Incidunt laudantium aspernatur deserunt dicta vitae fugiat, quis temporibus, suscipit
+        corrupti maiores ratione velit vel libero rerum quae reiciendis animi. Ratione at soluta earum, nostrum illo
+        aspernatur, amet molestiae corporis et esse veniam ducimus architecto voluptates inventore nemo explicabo
+        dolores? Aspernatur?
+    </div>
+    <div class="section2">
+        <h3>Section 2</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fuga quisquam autem hic! Rerum magni, maiores
+        voluptatum sunt reprehenderit perferendis rem, excepturi laborum quia distinctio necessitatibus odio. Placeat
+        natus exercitationem nam, impedit blanditiis qui explicabo voluptatibus sunt, temporibus repellendus corrupti,
+        molestiae illo ratione. Perspiciatis odit deserunt cumque minima beatae officia quidem, harum, voluptate quas
+        non totam libero assumenda eaque pariatur excepturi iusto impedit velit in explicabo necessitatibus numquam
+        commodi veniam, reprehenderit qui? Quos minima sint rem tempora obcaecati error, quae velit aperiam dolor
+        pariatur quisquam odio alias dolorem nulla. Vero, voluptas quod. Libero quibusdam voluptas odit ullam, corrupti
+        consectetur accusantium nihil ad ducimus veniam repellat deleniti optio quam iste a saepe temporibus, quas eos
+        corporis architecto accusamus ab nostrum! Commodi pariatur quisquam necessitatibus voluptatum non ducimus veniam
+        eligendi voluptatibus possimus ut. Ut deleniti dolore laboriosam eos explicabo vel. Laborum voluptatum dolorum
+        est officiis quia? Quos ullam, accusamus ea, adipisci vero perferendis eveniet corrupti vitae eaque provident
+        minima. Assumenda, sed! Incidunt laudantium aspernatur deserunt dicta vitae fugiat, quis temporibus, suscipit
+        corrupti maiores ratione velit vel libero rerum quae reiciendis animi. Ratione at soluta earum, nostrum illo
+        aspernatur, amet molestiae corporis et esse veniam ducimus architecto voluptates inventore nemo explicabo
+        dolores? Aspernatur?
+    </div>
+    <div class="section3">
+        <h3>Section 3</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fuga quisquam autem hic! Rerum magni, maiores
+        voluptatum sunt reprehenderit perferendis rem, excepturi laborum quia distinctio necessitatibus odio. Placeat
+        natus exercitationem nam, impedit blanditiis qui explicabo voluptatibus sunt, temporibus repellendus corrupti,
+        molestiae illo ratione. Perspiciatis odit deserunt cumque minima beatae officia quidem, harum, voluptate quas
+        non totam libero assumenda eaque pariatur excepturi iusto impedit velit in explicabo necessitatibus numquam
+        commodi veniam, reprehenderit qui? Quos minima sint rem tempora obcaecati error, quae velit aperiam dolor
+        pariatur quisquam odio alias dolorem nulla. Vero, voluptas quod. Libero quibusdam voluptas odit ullam, corrupti
+        consectetur accusantium nihil ad ducimus veniam repellat deleniti optio quam iste a saepe temporibus, quas eos
+        corporis architecto accusamus ab nostrum! Commodi pariatur quisquam necessitatibus voluptatum non ducimus veniam
+        eligendi voluptatibus possimus ut. Ut deleniti dolore laboriosam eos explicabo vel. Laborum voluptatum dolorum
+        est officiis quia? Quos ullam, accusamus ea, adipisci vero perferendis eveniet corrupti vitae eaque provident
+        minima. Assumenda, sed! Incidunt laudantium aspernatur deserunt dicta vitae fugiat, quis temporibus, suscipit
+        corrupti maiores ratione velit vel libero rerum quae reiciendis animi. Ratione at soluta earum, nostrum illo
+        aspernatur, amet molestiae corporis et esse veniam ducimus architecto voluptates inventore nemo explicabo
+        dolores? Aspernatur?
+    </div>
+</body>
+<script>
+    // impelement key tap such that 
+    // if press == 1{
+    //     go to section 1
+    // }else if (press == 2) {
+    //     go to section 2
+    // } else if (press == 3) {
+    //     go to section 3
+    // } else if (press == t) {
+    //     go to top
+    // } else if (press == b) {
+    //     go to bottom
+    // }
+
+    let section1 = document.querySelector(".section1");
+    let section2 = document.querySelector(".section2");
+    let section3 = document.querySelector(".section3");
+
+    document.documentElement.addEventListener('keydown', (e) => {
+        let key = e.key;
+        if (key === '1') {
+            section1.scrollIntoView();
+        }
+        else if (key === '2') {
+            section2.scrollIntoView();
+        } else if (key === '3') {
+            section3.scrollIntoView();
+        } else if (key === 't') {
+            window.scrollTo(0, 0);
+        } else if (key === 'b') {
+            let bottom = document.documentElement.getBoundingClientRect();
+            window.scrollTo(0, bottom.bottom);
+        }
+    })
+</script>
+
+</html>

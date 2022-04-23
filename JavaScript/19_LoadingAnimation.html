@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content:space-evenly;
+        }
+        .balls{
+            height:40px;
+            width:40px;
+            border-radius: 50%;
+            background-color:lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="balls"></div>
+        <div class="balls"></div>
+        <div class="balls"></div>
+        <div class="balls"></div>
+        <div class="balls"></div>
+    </div>
+</body>
+    <script>
+        let balls = document.querySelectorAll(".balls");
+        let count = 0;
+        setInterval(() => {
+            for (let i = 0; i < balls.length; i++) {
+                if(count%5 !== i)
+                {
+                    balls[i].style.backgroundColor = "pink";
+                }
+                else{
+                    balls[i].style.backgroundColor ="white";
+                }
+            }
+            count++;
+        }, 200);
+    </script>
+</html>
