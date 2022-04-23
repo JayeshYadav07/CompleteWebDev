@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page include the all importent concept of html in only one document.">
+    <meta name="keywords" content="html,html in one page,complete html,html5 document in one page">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
+    <link rel="mask-icon" href="Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Complete Html in one page.</title>
+
+</head>
+<body>
+    <ul type="none">
+        <li>1: Introduction to this course</li>
+
+            <!-- Complete Html Course -->
+
+        <li>2: Create First HTML File</li> 
+
+        <li>3: Basic Structure of HTML</li> 
+
+        <li>4: Doctype</li> 
+
+            <!-- <!DOCTYPE html>  Helps to google to know the actual type of document which helps in reduce load time. -->
+
+        <li>5: Elements and Attribute</li> 
+
+            <!-- 
+            HTML element is the entire structural block that sits on a page. 
+
+            HTML tags appear at the beginning and end of an HTML element.
+
+            HTML Attributes :-
+
+            Example :- 
+            <img src="https://www.yourwebsite.com/images/yourimage.jpg">
+
+            And of course, because the <img> element only has an opening tag, the src attribute simply goes inside it. Note too that the value specified in quotes for src is the filepath to the image that will be loaded onto the web page.
+
+            What if we want to set some dimensions for the image? We can do that by adding more attributes to the img element, like this.
+
+            <img src="https://www.yourwebsite.com/images/yourimage.jpg" width="600" height="200">
+
+            And notice too that these attributes follow the same structure of value="property" and note that the order of the attributes doesn't matter, so long as they're separated by a space. -->
+
+        <li>6: Indentation</li> 
+
+             <!-- Spacing and indentation should be consistent throughout your code.In HTML, each nested tag should be indented exactly one tab space inside of its parent tag. -->
+
+        <li>7: HTML Comments</li> 
+
+                <!-- The symbol of comments -->
+
+        <li>8: Headings</li> 
+
+            <!-- The <h1> to <h6> tags are used to define HTML headings.
+            <h1> defines the most important heading. <h6> defines the least important heading. -->
+
+        <li>9: Paragraph</li> 
+
+            <!-- The HTML <p> element defines a paragraph.
+            A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph. -->
+
+        <li>10: Formatting</li> 
+
+            <!-- HTML Formatting Elements
+            Formatting elements were designed to display special types of text:
+            
+            <b> - Bold text
+            <strong> - Important text
+            <i> - Italic text
+            <em> - Emphasized text
+            <mark> - Marked text
+            <small> - Smaller text
+            <del> - Deleted text
+            <ins> - Inserted text
+            <sub> - Subscript text
+            <sup> - Superscript text -->
+            
+            <!-- Example:-
+                <b>Bold Text</b>
+                <strong>Strong</strong>
+                <i>Italic</i>
+                <em>Emphasized</em>
+                <mark>Marked Text</mark>
+                <small>Small Text</small>
+                <del>Deleted Text</del>
+                <ins>Inserted text</ins>
+                <p>Nacl<sub>2</sub></p>
+                <p>(A<sup>2</sup>+B<sup>2</sup>)</p>
+             -->
+
+        <li>11: Quotation and Address</li> 
+
+            <!-- Blockquotes Vs q Tags -->
+
+                <!-- <p>
+                    <blockquote> Blockquotes is block level element, normally it starts and end with new line when displayed in the browser.</blockquote> <q> Q tag is inline element,normally it displays without line break.</q>
+                </p> -->
+
+            <!-- Abbrivation Tags -->
+
+                <!-- <p>
+                    The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+                    <p>
+                        Use the global <mark>title</mark> attribute to show the description for the abbreviation/acronym when you mouse over the element.
+                    </p>
+                </p> -->
+
+        <li>12: HTML Links</li> 
+
+            <!-- Defination Of Html Links  -->
+
+            <!-- <p>
+                HTML links are hyperlinks.
+
+                You can click on a link and jump to another document.
+
+                When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+                Note: A link does not have to be text. A link can be an image or any other HTML element!
+
+                HTML Links - Syntax
+
+                The HTML <a> tag defines a hyperlink. It has the following syntax:
+
+                <a href="url">link text</a>
+
+                The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+                The link text is the part that will be visible to the reader.
+
+                Clicking on the link text, will send the reader to the specified URL address.
+
+                Example:-  
+
+                This example shows how to create a link to W3Schools.com:
+
+                <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+
+                By default, links will appear as follows in all browsers:-
+                                An unvisited link is underlined and blue
+                                A visited link is underlined and purple
+                                An active link is underlined and red
+
+                Tip: Links can of course be styled with CSS, to get another look!
+
+                HTML Links - The target Attribute
+
+                By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+
+                The target attribute specifies where to open the linked document.
+
+                The target attribute can have one of the following values:
+
+                _self - Default. Opens the document in the same window/tab as it was clicked
+                _blank - Opens the document in a new window or tab
+                Example
+                Use target="_blank" to open the linked document in a new browser window or tab:
+
+                <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+                The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.
+
+                Example
+                <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+            </p> -->
+            
+            <!-- <p>
+                <a href="#last">Go TO Last</a> 
+                This is use to interlink with same page , Here the #last pointing to the last id.
+            </p>  -->
+
+        <li>13: Address Tags</li>
+        
+            <!-- Adddress Tags use to write the address -->
+
+                <!-- <address>
+                    Indira Nagar No.3 , Mulund (W).
+                </address> -->
+
+        <li>14: Images</li>
+            <!-- <img src="image.jfif" alt="CyberCode Logo"> -->
+        <li>15: Marquee</li> 
+            <!-- <marquee behavior="" direction="top">area</marquee> -->
+        <li>16: Ordered List</li> 
+        <li>17: Unordered List</li> 
+        <li>18: Description List</li> 
+                <!-- <dl>
+                    <dt>Tea</dt>
+                    <dd>This is made with water and milk</dd>
+                    <dt>coffee</dt>
+                    <dd>This is made with pure milk and coffee poweder</dd>
+                </dl> -->
+        <li>19: HTML Table</li> 
+        <!-- <table border="1">
+            <tr>
+                <td rowspan="4">Spaces</td>
+                <td colspan="5">nflk</td>
+            </tr>
+            <tr>
+                <td colspan="4">on</td>
+                <td rowspan="3">mubaa</td>
+            </tr>
+            <tr>
+                <td rowspan="2">pompu</td>
+                <td colspan="2" rowspan="2" >hindu</td>
+                <td rowspan="2">tdm</td>
+            </tr>
+        </table> -->
+        <li>20: Nested Table</li> 
+        <!-- Table inside a table -->
+        <li>21: Div and Span</li> 
+        <!-- div is block level elements. -->
+        <!-- span is inline element. -->
+        <li>22: Iframe</li> 
+        <!-- <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik" height="250px" width="250px" > -->
+        <li>23: HTML Audio</li> 
+        <!-- <audio src="audio.mp3" controls></audio> -->
+        <li>24: HTML Video</li> 
+        <!-- <video src="pubg.mp4" controls></video> -->
+        <li>25: Embed PDF</li> 
+        <!-- <a href="html_tutorial.pdf">pdf</a>
+        <iframe src="html_tutorial.pdf" height="700px" width="500px"></iframe>f -->
+        <li>26: Embed Youtube Video</li>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ZOjFPJ19Gq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <li>27: Embed Google Maps</li> 
+        <li>28: HTML Entities</li> 
+            <!-- <p>
+                Some characters are reserved in HTML.
+
+                If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+
+                Character entities are used to display reserved characters in HTML.
+
+                A character entity looks like this:
+
+                &entity_name;
+                OR
+
+                &#entity_number;
+            </p> -->
+        <li>29: HTML Symbols</li> 
+        <li>30: Emojis in HTML</li> 
+        <li>31: Semantic Elements</li> 
+            <!-- <p>
+                Semantic Elements:- Semantic elements have meaningful names which tells about type of content. For example header, footer, table, … etc. 
+                
+                HTML5 introduces many semantic elements as mentioned below which make the code easier to write and understand for the developer as well as instructs the browser on how to treat them. 
+ 
+                article
+                aside
+                details
+                figcaption
+                figure
+                footer
+                header
+                main
+                mark
+                nav
+                section
+            </p> -->
+        <li>32: HTML Image Maps</li> 
+        <!-- The best practice to use the use the image map genrator and that code import to the your website. -->
+            <!-- <p>
+                
+                With HTML image maps, you can create clickable areas on an image.
+
+                <img src="workplace.jpg" usemap="#image-map">
+
+                <map name="image-map">
+                    <area target="_blank" alt="Laptop" title="Laptop" href="https://www.amazon.in/s?k=laptop&amp;adgrpid=94221362531&amp;ext_vrnc=hi&amp;hvadid=410538887495&amp;hvdev=c&amp;hvlocphy=9062241&amp;hvnetw=g&amp;hvqmt=e&amp;hvrand=5016480345791649662&amp;hvtargid=kwd-353766051967&amp;hydadcr=16601_1945048&amp;tag=googinhydr1-21&amp;ref=pd_sl_4g4rq7oopz_e" coords="271,349,36,44" shape="rect">
+                    <area target="_blank" alt="Mobile Phone" title="Mobile Phone" href="https://www.amazon.in/s?k=mobile&amp;ref=nb_sb_noss_2" coords="333,246,325,172,290,174,296,243" shape="poly">
+                    <area target="_blank" alt="Tea " title="Tea " href="https://www.amazon.in/s?k=Tea&amp;ref=nb_sb_noss_2" coords="338,301,42" shape="circle">
+                </map>
+            </p> -->
+        <li>33: HTML Forms</li> 
+        <!-- <form action="">
+
+        </form> -->
+        <li>34: Form Input Types</li> 
+
+        <!-- <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+        </form>
+
+        <form>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd">
+        </form>
+
+        <form action="">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+        
+        <form>
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+        </form>
+
+        <form>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+        </form>
+
+        <form>
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        </form>
+
+        <form>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+        </form>
+        
+        <li>35: Form File Upload</li> 
+
+        <form>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+        </form> -->
+
+        <li>36: HTML Input Attribute</li> 
+            
+        <li>37: HTML Textarea and image button</li> 
+
+        <!-- <form action="">
+            <textarea name="" id="" cols="30" rows="10"> Namaste World</textarea>
+
+        </form> -->
+
+        <li>38: Select Option</li>
+
+        <!-- <label for="cars">Company</label> 
+        <select name="" id="cars" size="">
+            <option value="tata">tata</option>
+            <option value="tata" selected>mahindra</option>
+            <option value="tata">Farari</option>
+        </select> -->
+
+        <li>39: Radio Button</li> 
+
+        <!-- <p>Choose your favorite Web language:</p>
+        <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </form> -->
+
+        <li>40: Checkbox</li> 
+
+        <!-- <form>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+        </form> -->
+
+        <li>41: DataList</li> 
+
+            <!-- <p>
+                A datalist with pre-defined options (connected to an input element):
+                <input list="language">
+                <datalist id="language">
+                    <option value="C">
+                    <option value="CPP">
+                </datalist>
+            </p> -->
+
+        <li>42: Label, Fieldset and legends</li> 
+        <!-- The <fieldset> tag draws a box around the related elements.  -->
+        <!-- The <legend> tag is used to define a caption for the <fieldset> element -->
+            <!-- <fieldset>
+                <legend>
+                    Namaste World.
+                </legend>
+                <table border="1">
+                    <tr>
+                        <td>Heading 1</td>
+                        <td>Heading 2</td>
+                        <td>Heading 3</td>
+                    </tr>
+                    <tr>
+                        <td>okk</td>
+                        <td>Done</td>
+                        <td>Noo</td>
+                    </tr>
+                </table>
+            </fieldset> -->
+
+        <li>43: SEO Tags</li> 
+
+        <!-- Seo tags are used in head tag . GO TO HEAD TAG -->
+
+        <li>44: Favicon</li>
+
+        <!-- The best practice is to use fav icon is to use the favicon genretor websit and import to the head tag .Also download the favicon package to same folder and rename all the href path. -->
+
+        <li>45: Style in head Tag</li> 
+
+        <!-- Ther are two way to add the style in documents is add style tag to the head or create a style.css file. -->
+
+        <li>46: Script </li> 
+
+        <!-- Ther are two way to add the script in documents is add script tag to the head or create a script.js file and  link this to end of html elements. -->
+
+        <li>47: Right to Left Website</li> 
+
+        
+        <li id="last">48: W3c HTML Validation</li> 
+    </ul>
+</body>
+</html>

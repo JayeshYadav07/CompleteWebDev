@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3Website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 10px 50px;
+      }
+
+      /* nav bar */
+      header {
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+        color: white;
+        display: flex;
+      }
+      #logo {
+        margin-right: auto;
+      }
+      .nav-items{
+          margin-left: 10px;
+      }
+      /* image */
+      .banner {
+        height: 80vh;
+        width: 100%;
+        margin: 10px 0;
+      }
+      /* cards */
+      section div p {
+        margin: 10px 0;
+        font-size: larger;
+      }
+      section div img {
+        height: 80px;
+        width: 80px;
+        margin: 10px 0;
+      }
+      .cards {
+        display: flex;
+      }
+      .cards div {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      /* footer */
+      footer {
+        height: 50px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo"><h2>Logo</h2></div>
+      <div class="nav-items"><h2>html</h2></div>
+      <div class="nav-items"><h2>css</h2></div>
+      <div class="nav-items"><h2>js</h2></div>
+    </header>
+    <main>
+      <img class="banner" src="bg.jpg" alt="bg-img" />
+      <section class="cards">
+        <div class="card-1">
+          <img src="html.png" alt="" srcset="" />
+          <h1>HTML</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            ducimus. elit. Possimus, ducimus.
+          </p>
+        </div>
+        <div class="card-2">
+          <img src="html.png" alt="" srcset="" />
+          <h1>CSS</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            elit. Possimus, ducimus. ducimus.
+          </p>
+        </div>
+        <div class="card-3">
+          <img src="html.png" alt="" srcset="" />
+          <h1>JavaScript</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+            ducimus. elit. Possimus, ducimus.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h3>©PepCodeing 2K22</h3>
+    </footer>
+  </body>
+</html>

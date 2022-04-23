@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+
+        /* grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(12,1fr); */
+
+        /* second way of doing */
+        grid-template-areas:
+          "h h h h h h h h h h h h"
+          "s c c c c c c c c c c c"
+          "s c c c c c c c c c c c"
+          "s c c c c c c c c c c c"
+          "s c c c c c c c c c c c"
+          "s c c c c c c c c c c c"
+          "s c c c c c c c c c c c"
+          "s c c c c c c c c c c c"
+          "s c c c c c c c c c c c"
+          "s c c c c c c c c c c c"
+          "s c c c c c c c c c c c"
+          "f f f f f f f f f f f f";
+        background: rgba(185, 154, 154, 0);
+      }
+      .container div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .header {
+        /* grid-column: 1/13;
+        grid-row: 1/2; */
+        grid-area: h;
+        background: tomato;
+      }
+      .side-bar {
+        /* grid-row: 2/12;
+        grid-column: 1/2; */
+        grid-area: s;
+        background: lightgreen;
+      }
+      .container .main {
+        /* grid-column: 2/13;
+        grid-row: 2/12; */
+        grid-area: c;
+        background: skyblue;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+      }
+      .footer {
+        /* grid-row: 12/13;
+          grid-column: 1/13; */
+        grid-area: f;
+        background: hotpink;
+      }
+
+
+      .main .list-item{
+        height: 50px;
+        width: 50px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">header</div>
+      <div class="main">
+          <div class="list-item">1</div>
+          <div class="list-item">2</div>
+          <div class="list-item">3</div>
+          <div class="list-item">4</div>
+      </div>
+      <div class="side-bar">side-bar</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
