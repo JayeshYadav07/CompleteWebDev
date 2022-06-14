@@ -1,0 +1,48 @@
+.card-container{
+    padding: 10px;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 250px;
+    height: 450px;
+    line-height: 30px;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px gray;
+}
+.card-image{
+    display: flex;
+    justify-content: center;
+    width: 240px;
+    height: 260px;
+    margin: 5px;
+    font-size: 15px;
+}
+.card-image img{
+    max-width: 100%;
+    max-height: 100%;
+    color: rgb(248, 249, 249);
+}
+.card-available-stocks{
+    text-align: center;
+}
+.stock-title{
+    color: #B12704 !important;
+}
+.card-price{
+    text-align: center;
+    color: #B12704!important;
+}
+.card-title
+{
+    font-weight: bold;
+    text-align: center;
+}
+.card-description{
+    text-align: center;
+}
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

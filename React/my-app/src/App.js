@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+import Card from "./components/card/Card";
+import Header from "./components/header/Header";
+import SubHeader from "./components/subheader/SubHeader";
+import Pants from "./pages/pants/Pants";
+import Shirt from "./pages/shirt/Shirt";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 function App() {
+  let [type, setType] = useState("")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header setType={setType} />
+      <SubHeader />
+      <Routes>
+        <Route path="/" element={<Card type={type} />} />
+        <Route path="/pants" element={<Pants />} />
+        <Route path="/shirt" element={<Shirt />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;

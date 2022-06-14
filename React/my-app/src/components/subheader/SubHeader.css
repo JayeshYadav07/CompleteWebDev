@@ -1,0 +1,20 @@
+.list_group{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 2px;
+    height: 40px;
+    color: white;
+    background-color: rgb(34, 47, 63);
+}
+.list_group li{
+    margin: 5px 10px;
+}
+.link{
+    text-decoration: none !important;
+    color: white;
+}
+.list_group li:hover{
+    color:rgb(194, 193, 193);
+}

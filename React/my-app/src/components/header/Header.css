@@ -1,0 +1,31 @@
+.header{
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+.logo img{
+    height: 40px;
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.search-box input{
+    width: 60vw;
+    height: 35px;
+    outline: none;
+    border: none;
+    font-size: large;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.cart-container img{
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
